@@ -1,0 +1,1418 @@
+@import url('https://fonts.googleapis.com/css2?family=Lato:ital,wght@0,100;0,300;0,400;0,700;0,900;1,100;1,300;1,400;1,700;1,900&family=Plus+Jakarta+Sans:ital,wght@0,200..800;1,200..800&display=swap');
+
+@keyframes Ani {
+    0% {
+        opacity: 1;
+    }
+
+    100% {
+        opacity: 0;
+    }
+}
+ @keyframes jumpUp {
+     0% {
+         transform: translateY(3px);
+     }
+
+     80% {
+         transform: translateY(0);
+     }
+
+     100% {
+         transform: translateY(3px);
+     }
+ }
+* {
+   box-sizing: border-box;
+   margin: 0;
+   padding: 0;
+}
+.Container {
+   background: url(https://imgak.mmtcdn.com/pwa_v3/pwa_commons_assets/desktop/bg3.jpg);
+   background-size: cover;
+   height: 80vh;
+   position: relative;
+}
+.mmt-logo img {
+   width: 155px;
+}
+.header-section {
+   display: flex;
+   justify-content: space-evenly;
+   align-items: center;
+   margin-bottom: 30px;
+}
+.user-section {
+   display: flex;
+}
+.user-section li {
+   list-style-type: none;
+   padding: 5px 10px;
+}
+.listYourProperty{
+   display: flex;
+   align-items: center;
+   cursor: pointer;
+}
+.propertyText {
+   margin-left: 8px;
+}
+.propertyText .whiteText {
+   color: #ffffff;
+   font-size: 11.5px;
+   font-weight: 700;
+   font-family: "Lato", sans-serif;
+   line-height: 12px;
+}
+.propertyText .greyText {
+   color: #c2c2c2;;
+   font-size: 10px;
+   font-weight: 700;
+   font-family: "Lato", sans-serif;
+   line-height: 12px;
+}
+.landingUl-Image {
+   background-image: url(https://imgak.mmtcdn.com/pwa_v3/pwa_commons_assets/desktop/landingSprite@28x.png);
+   background-repeat: no-repeat;
+   display: inline-block;
+   background-size: 200px 700px;
+   font-size: 0;
+   flex-shrink: 0;
+}
+.listYourPropertyIcon {
+   width: 32px;
+   height: 33px;
+   background-position: -78px -517px;
+}
+.myBiz {
+   display: flex;
+   align-items: center;
+   justify-content: center;
+   cursor: pointer;
+   margin-left: 0 !important;
+   border: dotted rgb(255 255 255 / 15%);
+   border-width: 0 0 0 2px;
+   background-color: transparent;
+   min-width: 195.5px;
+   box-shadow: 0 1px 4px 0 rgb(0 0 0 / 20%);
+   height: 43px;
+}
+.myBiz .landingUl-Image {
+   margin-right: 10px;
+}
+.myBizIcon {
+   width: 44px;
+   height: 22px;
+   background-position: -98px -491px;
+}
+.myBizText .whiteText {
+   color: #ffffff;
+   font-size: 14px;
+   font-weight: 700;
+   font-family: "Lato", sans-serif;
+}
+.lightWhiteText {
+   color: #ffffff;
+   font-size: 10px;
+   font-weight: 600;
+   font-family: "Lato", sans-serif;
+}
+.myTrips {
+   display: flex;
+   align-items: center;
+   margin-left: 7px;
+   border-left: dotted rgb(255 255 255 / 15%);
+   height: 43px;
+   cursor: pointer;
+}
+.myTripIcon {
+   width: 18px;
+   height: 25px;
+   background-position: -121px -30px;
+}
+.myTrips .landingUl-Image {
+   margin-right: 10px;
+}
+.myTrips .whiteText {
+   color: #ffffffeb;
+   font-size: 13px;
+   font-weight: 700;
+   font-family: "Lato", sans-serif;
+}
+.loginButton {
+   display: flex;
+   align-items: center;
+   justify-content: space-between;
+   width: 213px;
+   height: 42px;
+   border-radius: 4px;
+   border: 0;
+   background-image: linear-gradient(95deg, #53b2fe 30%, #1b56c3c2 100%);
+   cursor: pointer;
+}
+.iconCumText {
+   display: flex;
+   align-items: center;
+}
+.loginButton .landingUl-Image {
+   margin-right: 10px;
+}
+.myWhiteIcon {
+   width: 23px;
+   height: 22px;
+   background-position: -67px -489px !important;
+}
+.loginText {
+   color: #ffffffeb;
+   font-size: 10.3px;
+   font-weight: 700;
+   font-family: "Lato", sans-serif;
+}
+.arrowFlex {
+   display: flex;
+   align-items: center;
+}
+.arrow {
+   border: solid #fff;
+   border-width: 0 2px 2px 0;
+   display: inline-block;
+   padding: 3px;
+}
+.down {
+   transform: rotate(45deg);
+   -webkit-transform: rotate(45deg);
+   margin-top: -5px;
+}
+.settingSelector {
+   display: flex;
+   align-items: center;
+   justify-content: center;
+   color: rgb(255 255 255);
+   text-transform: uppercase;
+   font-size: 11px;
+   padding: 12px 10px;
+   gap: 5px;
+   min-width: 62px;
+   background-color: rgb(255, 255, 255, 0.15) !important;
+   border-radius: 4px;
+   height: 43px;
+   margin-left: 6px;
+   cursor: pointer;
+}
+.settingSelector span {
+   font-family: "Lato", sans-serif;
+   font-weight: 700;
+}
+.landingUl-flag {
+   background-image: url(images/flagSprite3.png);
+   background-repeat: no-repeat;
+   background-size: 18px 92px;
+   display: inline-block;
+}
+.flagIcon {
+   width: 18px;
+   height: 12px;
+   background-position: 0 0;
+}
+.arrowFlag {
+   display: inline-block;
+   width: 5px;
+   height: 5px;
+   padding: 2px;
+   border-top: 2px solid;
+   border-right: 2px solid;
+   border-bottom: 0px;
+   border-color: rgb(255, 255, 255);
+   margin: 0 2px;
+}
+.downFlag {
+   transform: rotate(135deg) skew(7deg, 7deg);
+}
+.outerHeader {
+   display: flex;
+   align-items: center;
+   justify-content: center;
+   position: absolute;
+   left: 0;
+   right: 0;
+}
+.outerHeader nav {
+   height: 100px;
+   background: #fff;
+   border-radius: 8px;
+   box-shadow: 0 2px 20px 0 rgb(0 0 0 / 10%);
+   display: flex;
+   align-items: center;
+   padding: 8px 30px;
+}
+.headerWrapper {
+   position: absolute;
+   z-index: 11;
+   top: 0;
+}
+.logoContainer {
+   width: 100%;
+   padding: 0;
+   margin: 0 auto;
+}
+.outerHeader .iconGap {
+   display: flex;
+   width: 100% !important;
+   gap: 40px;
+}
+.flightsMenu {
+   display: flex;
+}
+.flights {
+   background-image: url(https://imgak.mmtcdn.com/pwa_v3/pwa_commons_assets/desktop/B2CHeaderSprite.png);
+   background-size: 260px 400px;
+   display: inline-block;
+}
+.flightIcon {
+   width: 42px;
+   height: 32px;
+   background-position: -5px -44px;
+}
+.makeIconFlex {
+   display: flex;
+   flex-direction: column;
+   align-items: center;
+}
+nav ul li {
+   list-style-type: none;
+}
+.iconStyling {
+   width: 52px;
+   height: 40px;
+   display: flex;
+   align-items: center;
+   justify-content: center;
+   margin-bottom: 4px;
+}
+.logoContainer a  {
+   text-decoration: none;
+}
+.fullTitle {
+   color: #4a4a4a;
+   font-family: "Lato", sans-serif;
+   font-size: 14px;
+   font-weight: 500;
+   line-height: 17px;
+   text-align: center;
+}
+.Active {
+   color: #008cff;
+   font-weight: 700;
+}
+.headerWrapper .logoContainer ul li .Active:after {
+   content: "";
+   width: 45px;
+   height: 3px;
+   background: #008cff;
+   left: 33px;
+   z-index: 2;
+   display: inline-block;
+   position: absolute;
+   border-radius: 6px;
+   bottom: 0;
+}
+.Hotels {
+   background-image: url(https://imgak.mmtcdn.com/pwa_v3/pwa_commons_assets/desktop/B2CHeaderSprite.png);
+   background-size: 260px 400px;
+   display: inline-block;
+}
+.hotelIcon {
+   width: 36px;
+   height: 40px;
+   background-position: -60px 0px;
+}
+.HomeStays {
+   background-image: url(https://imgak.mmtcdn.com/pwa_v3/pwa_commons_assets/desktop/B2CHeaderSprite.png);
+   background-size: 260px 400px;
+   display: inline-block;
+}
+.homeIcon {
+   width: 44px;
+   height: 37px;
+   background-position: -57px -83px;
+}
+.Holiday {
+   background-image: url(https://imgak.mmtcdn.com/pwa_v3/pwa_commons_assets/desktop/B2CHeaderSprite.png);
+   background-size: 260px 400px;
+   display: inline-block;
+}
+.holidayIcon {
+   width: 42px;
+   height: 33px;
+   background-position: -109px -4px;
+}
+.extraWidth {
+   max-width: 81px;
+}
+.extraWidthPack {
+   max-width: 70px;
+}
+.Trains {
+   background-image: url(https://imgak.mmtcdn.com/pwa_v3/pwa_commons_assets/desktop/B2CHeaderSprite.png);
+   background-size: 260px 400px;
+   display: inline-block;
+}
+.trainIcon {
+   width: 47px;
+   height: 37px;
+   background-position: -156.5px -3px;
+}
+.Buses {
+   background-image: url(https://imgak.mmtcdn.com/pwa_v3/pwa_commons_assets/desktop/B2CHeaderSprite.png);
+   background-size: 260px 400px;
+   display: inline-block;
+}
+.busIcon {
+   width: 43px;
+   height: 36px;
+   background-position: -210.5px -2px;
+}
+.Cabs {
+   background-image: url(https://imgak.mmtcdn.com/pwa_v3/pwa_commons_assets/desktop/B2CHeaderSprite.png);
+   background-size: 260px 400px;
+   display: inline-block;
+}
+.cabIcon {
+   width: 39px;
+   height: 37px;
+   background-position: -110px -82px;
+}
+.Forex {
+   background-image: url(https://imgak.mmtcdn.com/pwa_v3/pwa_commons_assets/desktop/B2CHeaderSprite.png);
+   background-size: 260px 400px;
+   display: inline-block;
+}
+.forexIcon {
+   width: 30px;
+   height: 34px;
+   background-position: -167px -83px;
+}
+.extraWidthForex {
+   max-width: 71px;
+}
+.Travel_Insurance {
+   background-image: url(https://imgak.mmtcdn.com/pwa_v3/pwa_commons_assets/desktop/B2CHeaderSprite.png);
+   background-size: 260px 400px;
+   display: inline-block;
+}
+.insuranceIcon {
+   width: 25px;
+   height: 29px;
+   background-position: -221px -86px;
+}
+.fixedPosition {
+   position: fixed;
+   top: 0;
+   left: 0;
+   width: 100%;
+   height: 100%;
+   z-index: 1001;
+   background: rgb(0 0 0 / 60%);
+}
+.loginSignUpContainer {
+   display: flex;
+   align-items: center;
+   justify-content: center;
+   position: relative;
+   width: 100%;
+   height: 100%;
+   flex-direction: row;
+}
+.itemContainer {
+   position: relative;
+}
+.sliderBackground {
+   background: url(https://imgak.mmtcdn.com/pwa_v3/pwa_header_assets/loginPersuassionValley.webp);
+   border-radius: 10px 0px 0px 10px;
+   height: 540px;
+   width: 386px;
+   padding-top: 80px;
+   z-index: 2;
+   overflow: hidden;
+   position: relative;
+}
+.itemHeader {
+   padding-inline: 45px;
+}
+.itemHeader .subTitle {
+   font-size: 24px;
+   line-height: 28px;
+   font-weight: 900;
+   color: #ffffff;
+   font-family: "Lato", sans-serif;
+}
+.itemBenefits {
+   position: absolute;
+   left: 14%;
+   margin-top: 35px;
+}
+.itemBenefits li {
+   display: flex;
+   align-items: center;
+   list-style-type: none;
+   padding: 7px 14px;
+}
+.itemBenefits span {
+   margin-right: 16px;
+}
+.loginFlight {
+   background: url(https://imgak.mmtcdn.com/pwa_v3/pwa_commons_assets/desktop/loginImageSlider@1x.png);
+   display: inline-block;
+   background-size: 150px 70px;
+   flex-shrink: 0;
+}
+.whiteFlight {
+   width: 38px;
+   height: 26px;
+   background-position: 0 0;
+}
+.itemBenefits p {
+   line-height: 20px;
+   font-size: 16px;
+   color: #ffffff;
+   font-family: "Lato", sans-serif;
+   font-weight: 900;
+}
+.itemBenefits .paraWidth {
+   max-width: 190px;
+}
+.itemBenefits .paraWidth1 {
+   max-width: 183px;
+}
+.loginHotel {
+   background: url(https://imgak.mmtcdn.com/pwa_v3/pwa_commons_assets/desktop/loginImageSlider@1x.png);
+   display: inline-block;
+   background-size: 150px 70px;
+   flex-shrink: 0;
+}
+.whiteHotel {
+   width: 32px;
+   height: 24px;
+   background-position: -70px 0;
+}
+.loginTrain {
+   background: url(https://imgak.mmtcdn.com/pwa_v3/pwa_commons_assets/desktop/loginImageSlider@1x.png);
+   display: inline-block;
+   background-size: 150px 70px;
+   flex-shrink: 0;
+}
+.whiteTrain {
+   width: 26px;
+   height: 34px;
+   background-position: -40px 0;
+}
+.itemBenefits .bottomLine {
+   border-bottom: 1.3px solid rgb(255 255 255 / 35%);
+}
+.hotelMargin {
+   margin-bottom: 10px;
+}
+/* Buttons */
+.radio-buttons {
+   display: flex;
+   justify-content: space-between;
+}
+
+.radio-input {
+   display: none;
+}
+
+.radio-label {
+   padding: 7px 25px;
+   border-radius: 150px;
+   cursor: pointer;
+   color: #ffffff;
+   line-height: 15px;
+   font-size: 16px;
+   font-weight: 800;
+   text-transform: uppercase;
+   font-family: "Lato", sans-serif;
+   text-align: center;
+   background-image: linear-gradient(93deg, #53b2fe, #065af3);
+   transition: background 0.3s, transform 0.2s;
+}
+.bizAccount {
+   background-image: none;
+   color: #1f1f1fb7;
+}
+.radio-input:checked+.radio-label {
+   transform: scale(1.03);
+}
+/* Google Buttons */
+.gsi-material-button {
+   display: flex;
+   align-items: center;
+   justify-content: center;
+   background-color: WHITE;
+   border: 1px solid #d8d8d8;
+   box-sizing: border-box;
+   color: #1f1f1f;
+   cursor: pointer;
+   font-family: "Lato", sans-serif;
+   font-size: 14px;
+   height: 40px;
+   width: 40px;
+   border-radius: 25px;
+}
+.gsi-material-button-icon >svg {
+   height: 23px;
+}
+.sliderSection {
+   display: flex;
+   align-items: center;
+   padding: 9px 12px;
+   justify-content: space-between;
+   background: rgb(0 0 0 / 40%);
+   position: relative;
+   top: 85%;
+   left: 40%;
+   bottom: 8px;
+   z-index: 3;
+   width: 86px;
+   border-radius: 100px;
+}
+.sliderSection .prev {
+   margin-right: 10px;
+   transform: rotate(180deg);
+   cursor: pointer;
+}
+.whiteArrow {
+   width: 6px;
+   height: 16px;
+   background: url(https://imgak.mmtcdn.com/pwa_v3/pwa_commons_assets/desktop/loginImageSlider@1x.png) no-repeat;
+   background-position: -104px 3px;
+}
+.previousSlider {
+   background-size: 150px 70px;
+   display: inline-block;
+   flex-shrink: 0;
+}
+.dotted {
+   display: flex;
+   align-items: center;
+}
+.dottedItem {
+   content: "";
+   display: block;
+   width: 6px;
+   height: 6px;
+   background: #ffffff;
+   border-radius: 50%;
+   opacity: 0.5;
+   margin-right: 6px;
+   z-index: 4;
+}
+.dottedItem:last-child {
+   margin-right: 0;
+}
+.sliderSection .next {
+   margin-left: 10px;
+   cursor: pointer;
+}
+.accountContainer {
+   width: 510px;
+   height: 565px;
+   box-shadow: 0 1px 7px rgb(0 0 0 / 40%);
+   z-index: 3;
+   background-color: #ffffff;
+   border-radius: 10px;
+   padding: 30px;
+   position: relative;
+   transform: translate(0%, 0%);
+   top: 0;
+   left: 0;
+}
+.accountContainer .radio-buttons {
+   padding: 7px;
+   border-radius: 51px;
+   background-color: #ffffff;
+   box-shadow: 0 1px 7px rgb(0 0 0 / 30%);
+   cursor: pointer;
+}
+form .innerInput {
+   display: flex;
+   align-items: center;
+   position: relative;
+   margin-top: 5px;
+}
+.countryImage {
+   display: flex;
+   align-items: center;
+}
+.flagWrap {
+   position: absolute;
+   left: 7%;
+   top: 2.2px;
+}
+.flagWrap img {
+   width: 23px;
+}
+.innerInput input {
+   width: 100%;
+   padding: 12px;
+   border-radius: 5px;
+   border: 1px solid #4a4a4ab2;
+   padding-left: 95px;
+}
+input::placeholder {
+   color: #4a4a4ad8;
+   font-size: 14px;
+   font-family: "Lato", sans-serif;
+}
+.drop-down {
+   border: solid #008cff;
+   border-width: 0 2px 2px 0;
+   display: inline-block;
+   padding: 3px;
+}
+.Down {
+   -webkit-transform: rotate(45deg);
+   transform: rotate(45deg);
+   width: 6px;
+   height: 8px;
+   position: absolute;
+   left: 93.5%;
+   top: 39%;
+}
+.mobileCode {
+   position: absolute;
+   left: 38px;
+   font-family: "Lato", sans-serif;
+   font-size: 14px;
+   color: #1f1f1fe5;
+   font-weight: 700;
+}
+.countryCode {
+   width: 80px;
+   height: 25px;
+   position: absolute;
+   cursor: pointer;
+}
+form .formWrapper {
+   margin-block: 25px 8px;
+}
+.formWrapper label {
+   font-family: "Lato", sans-serif;
+   font-size: 14px;
+   color: #1f1f1f;
+   font-weight: 700;
+}
+.options {
+   display: flex;
+   align-items: center;
+   justify-content: center;
+   font-family: "Lato", sans-serif;
+   font-weight: 700;
+   font-size: 16px;
+   color: #1f1f1fdc;
+}
+.emailWrapper {
+   display: flex;
+   align-items: center;
+   position: relative;
+   margin-block: 5px 15px;
+}
+.email-image {
+   position: absolute;
+   display: flex;
+   align-items: center;
+   cursor: pointer;
+   left: 1.3px;
+}
+.email-image img {
+   width: 32px;
+}
+.anotherFormWrapper input {
+   width: 100%;
+   height: 41px;
+   border: 1px solid #4a4a4ab2;
+   border-radius: 5px;
+   padding-left: 42px;
+}
+.anotherFormWrapper input::placeholder {
+   color: #4a4a4ad8;
+   font-size: 14px;
+   font-family: "Lato", sans-serif;
+}
+.anotherFormWrapper label {
+   font-family: "Lato", sans-serif;
+   font-size: 14px;
+   color: #1f1f1f;
+   font-weight: 700;
+}
+.continueBtn {
+   width: 100%;
+   padding: 12px;
+   border: none;
+   border-radius: 100px;
+   cursor: pointer;
+}
+.continueBtn:hover {
+   background-color: #008cff;
+}
+.btnContainer span {
+   font-family: "Lato", sans-serif;
+   font-size: 16px;
+   font-weight: 700;
+   color: #ffffff;
+   text-transform: uppercase;
+}
+.logInBar {
+   width: 100%;
+   border-bottom: 1px solid #d8d8d8;
+   display: flex;
+   align-items: center;
+   justify-content: center;
+   margin-bottom: 26px;
+   margin-top: 25px;
+}
+.logInBar span {
+   font-size: 12px;
+   font-family: "Lato", sans-serif;
+   color: #9b9b9b;
+   font-weight: 700;
+   padding: 0 10px;
+   background-color: #fff;
+   margin-bottom: -7px;
+}
+.googleNmail {
+   display: flex;
+   align-items: center;
+   justify-content: center;
+   gap: 1rem;
+}
+.googleNmail img {
+   width: 40px;
+   cursor: pointer;
+}
+.footer-area {
+   margin-top: 90px;
+}
+.footer-area p {
+   font-size: 12px;
+   font-family: "Lato", sans-serif;
+}
+.footer-area a {
+   text-decoration: none;
+   color: #008cff;
+}
+.closeButton {
+   background-color: #fff;
+   position: fixed;
+   display: flex;
+   align-items: center;
+   justify-content: center;
+   width: 25px;
+   height: 25px;
+   /* font-size: 23px; */
+   border-radius: 50%;
+   z-index: 14;
+   cursor: pointer;
+   top: 0%;
+   right: -40px;
+}
+.closeButton::before {
+   transform: rotate(45deg);
+}
+.closeButton::before {
+   position: absolute;
+   left: 12px;
+   content: "";
+   height: 14px;
+   width: 2px;
+   background-color: #000;
+}
+.closeButton::after {
+   transform: rotate(-45deg);
+}
+.closeButton::after {
+   position: absolute;
+   left: 12px;
+   content: "";
+   height: 14px;
+   width: 2px;
+   background-color: #000;
+}
+.secondaryLogin {
+   font-family: "Lato", sans-serif;
+   font-size: 13px;
+   font-weight: 700;
+   color: #008cff;
+   margin-block: 0px 12px;
+   text-decoration: underline;
+}
+.secondaryLogin span {
+   cursor: pointer;
+}
+.secondaryForm {
+   margin-block: 25px 30px;
+}
+.bizWrappper h1 {
+   margin-block: 25px;
+   font-family: "Lato", sans-serif;
+   color: #1f1f1fd1;
+   font-size: 25px;
+   font-weight: 900;
+}
+.bizLable {
+   display: flex;
+   align-items: center;
+   justify-content: space-between;
+}
+.bizInput {
+   display: flex;
+   align-items: center;
+   justify-content: space-between;
+   margin-block: 6px 30px;
+}
+.bizForm label {
+   font-family: "Lato", sans-serif;
+   font-size: 14px;
+   color: #1f1f1f;
+   font-weight: 700;
+}
+.bizLable a {
+   font-family: "Lato", sans-serif;
+   font-size: 13px;
+   color: #ff664b;
+   font-weight: 700;
+}
+.bizInput input {
+   width: 100%;
+   height: 40px;
+   border-radius: 4px;
+   background-color: #ffffff;
+   outline: 0;
+   padding: 0 17px;
+   font-size: 14px;
+   color: #4a4a4a;
+   font-weight: 400;
+   border: 1px solid #ff664bd1;
+}
+.bizBtn {
+   width: 45%;
+   display: flex;
+   align-items: center;
+   justify-content: center;
+   height: 44px;
+   background: #c2c2c2;
+   margin-left: 7px;
+   border-radius: 4px;
+   color: #ffffff;
+   font-family: "Lato", sans-serif;
+   font-size: 15px;
+   font-weight: 700;
+   text-transform: uppercase;
+   cursor: pointer;
+}
+.bizBtn:hover {
+   background-image: linear-gradient(256deg, #ff684a, #ff4959);
+   box-shadow: 0 1px 17px 0 rgb(0 0 0 / 32%);
+}
+.bizPara-and-Google {
+   display: flex;
+   flex-direction: column;
+   align-items: center;
+   justify-content: center;
+   gap: 0.7rem;
+}
+.bizPara-and-Google p {
+   font-family: "Lato", sans-serif;
+   color: #9b9b9b;
+   font-size: 13px;
+   font-weight: 700;
+}
+.bizFooter {
+   display: flex;
+   align-items: center;
+   justify-content: center;
+   margin-top: 12px;
+   font-size: 12px;
+   font-family: "Lato", sans-serif;
+   font-weight: 500;
+}
+.bizFooter p {
+   color: #9b9b9b;
+}
+.bizFooter a {
+   color: #ff664b;
+   text-decoration: none;
+}
+.minContainer {
+   margin-top: 80px;
+}
+.flightWidgetSection {
+   margin-bottom: 40px !important;
+   position: relative;
+   margin: 0 auto;
+   min-height: 321px;
+   width: 1200px;
+}
+.searchContainer {
+   padding: 0;
+   margin: 0;
+   color: #4a4a4a;
+   font-size: 14px;
+   font-family: "Lato", sans-serif;
+   box-sizing: border-box;
+   scroll-behavior: smooth;
+}
+.searchItemContainer {
+   width: 1200px;
+   margin: 0 auto;
+   position: relative;
+   z-index: 10;
+   border-radius: 10px;
+   box-shadow: 0 1px 5px 0 rgba(0, 0, 0, 0.1);
+   background-color: #fff;
+   padding: 69px 20px 0 20px;
+}
+.flightWidgetSection .waySection {
+   display: flex;
+   align-items: center;
+   justify-content: space-between;
+}
+.waySection .wayTabs {
+   display: flex;
+   width: 400px;
+}
+.wayTabs li {
+   display: flex;
+   align-items: center;
+   text-transform: capitalize;
+   margin: 0 10px;
+   cursor: pointer;
+   padding: 2px 6px;
+   border-radius: 20px;
+}
+.wayTabs li.selected {
+   background: #eaf5ff;
+   color: #000000;
+   font-weight: 900;
+}
+.wayTabs li.selected .makeCircle {
+   border: #008cff;
+   background: #008cff;
+}
+.wayTabs li .makeCircle {
+   width: 12px;
+   height: 12px;
+   border-radius: 100%;
+   border: 1px solid #9b9b9b;
+}
+.makeCircle::after {
+   content: "";
+   display: block;
+   width: 3px;
+   height: 6px;
+   border: solid #fff;
+   border-width: 0 1.5px 1.5px 0;
+   transform: rotate(45deg);
+   margin-top: 1.5px;
+   margin-left: 3.5px;
+}
+.right5 {
+   margin-right: 5px;
+}
+.pushRight a {
+   text-decoration: none;
+   color: #4a4a4a;
+}
+.selectingStateOptions {
+   background: #fff;
+   padding: 11px 0;
+}
+.selectingStateOptions .stateInnerSection {
+   width: 100%;
+   margin: 0 auto 20px;
+   border-radius: 10px;
+   display: flex;
+   align-items: center;
+   position: relative;
+   border: solid 1px #e7e7e7;
+}
+.selectingStateOptions .FromInputBox {
+   width: 300px;
+   height: 112px;
+   border-right: solid 1px #e7e7e7;
+   transition: all 0.2s linear;
+}
+.selectingStateOptions .Ticket_Details {
+   background: rgba(255, 255, 255, 0.1);
+   display: flex;
+   -webkit-box-orient: vertical;
+   -webkit-box-direction: normal;
+   flex-direction: column;
+   position: relative;
+}
+.Ticket_Details label {
+   padding: 10px 19px;
+   display: flex;
+   flex-direction: column;
+   cursor: pointer;
+}
+.stateInnerSection .fromText {
+   margin-bottom: 10px;
+}
+.FromInputBox input {
+   font-family: "Lato", sans-serif;
+   line-height: 36px;
+}
+.stateInnerSection .inputField {
+   border: 0;
+   outline: 0;
+   background: none;
+   min-width: 140px;
+   max-height: 36px;
+   cursor: pointer;
+   padding: 0;
+   margin: 0;
+   font-size: 30px;
+   font-weight: 900;
+   color: #000000;
+}
+.FromInputBox p {
+   position: relative;
+}
+.airPortName {
+   width: 100%;
+   text-overflow: ellipsis;
+   white-space: nowrap;
+   overflow: hidden;
+   display: inline-block;
+}
+.fltSwipCircle {
+   width: 40px;
+   height: 40px;
+   flex-shrink: 0;
+   margin-left: -22px;
+   border-radius: 100%;
+   background: #fff;
+   display: flex;
+   align-items: center;
+   justify-content: center;
+   box-shadow: 0 1px 30px 0 rgb(0, 0, 0, 0.1);
+   z-index: 1;
+   cursor: pointer;
+}
+.flightsSprite {
+   background-image: url(https://imgak.mmtcdn.com/pwa_v3/pwa_commons_assets/desktop/landingSprite@21x.webp);
+   background-repeat: no-repeat;
+   display: inline-block;
+   background-size: 200px 650px;
+   flex-shrink: 0;
+   font-size: 0;
+}
+.fltSwipIcon {
+   width: 15px;
+   height: 11px;
+   background-position: -149px -111px;
+}
+.selectingStateOptions .ToInputBox {
+   width: 300px;
+   height: 112px;
+   padding-left: 20px;
+   margin-left: -18px;
+   border-right: solid 1px #e7e7e7;
+}
+.ToInputBox p {
+   position: relative;
+}
+.selectingStateOptions .dateInputBox {
+   width: 158px;
+   height: 112px;
+   border-right: solid 1px #e7e7e7;
+}
+.dateInputBox .departText::after {
+   border: solid #008cff;
+   border-width: 0 2px 2px 0;
+   display: inline-block;
+   padding: 3px;
+   content: "";
+   transform: rotate(45deg);
+   -webkit-transform: rotate(45deg);
+   vertical-align: top;
+   margin: 3px 0 0 8px;
+   transition: all 0.3s ease-in-out;
+}
+.dateInputBox input {
+   opacity: 0 !important;
+   position: absolute;
+   z-index: -1;
+}
+.dateInputBox .blackText {
+   line-height: 30px;
+   color: #000000;
+   font-size: 20px;
+}
+.blackText .font30 {
+   font-size: 30px;
+   font-weight: 900;
+}
+.shortYear::before {
+   content: "'";
+}
+.selectingStateOptions .returnInputBox {
+   width: 158px;
+   height: 112px;
+   border-right: solid 1px #e7e7e7;
+}
+.returnTooltip {
+   position: absolute;
+   background: #249995;
+   border-radius: 4px;
+   top: -89px;
+   left: -61px;
+   width: 350px;
+   z-index: 12;
+   padding: 10px 15px;
+   color: #fff;
+}
+.returnInputBox .returnText::after {
+   border: solid #008cff;
+   border-width: 0 2px 2px 0;
+   display: inline-block;
+   padding: 3px;
+   content: "";
+   transform: rotate(45deg);
+   -webkit-transform: rotate(45deg);
+   vertical-align: top;
+   margin: 3px 0 0 8px;
+   transition: all 0.3s ease-in-out;
+}
+.returnInputBox p {
+   font-size: 12px;
+   font-weight: 900;
+   color: #9b9b9b;
+   line-height: 16px !important;
+}
+.selectingStateOptions .travellerInputBox {
+   width: 214px;
+   height: 112px;
+   border-radius: 0 10px 10px 0;
+}
+.travellerInputBox input {
+   opacity: 0;
+   position: absolute;
+   width: 100%;
+   height: 100%;
+   font-size: 0;
+   top: 0;
+   left: 0;
+   z-index: -1;
+}
+.travellerInputBox .travellerText::after {
+   border: solid #008cff;
+   border-width: 0 2px 2px 0;
+   display: inline-block;
+   padding: 3px;
+   content: "";
+   transform: rotate(45deg);
+   -webkit-transform: rotate(45deg);
+   vertical-align: top;
+   margin: 3px 0 0 8px;
+   transition: all 0.3s ease-in-out;
+}
+.travellerInputBox .blackText {
+   line-height: 36px;
+   color: #000000;
+}
+.travellerInputBox .mRight {
+   margin-right: 10px;
+   font-size: 20px;
+}
+.stateInnerSection .travellerText {
+   margin-bottom: 4px;
+}
+.mRight .font30 {
+   font-weight: 900;
+}
+.mRight .font30::after {
+   margin-right: 5px;
+}
+.width {
+   min-width: 195px;
+}
+.titleTag {
+   display: inline-block;
+   padding: 2px 6px;
+   border-radius: 5px;
+   background-image:  linear-gradient(to right, rgb(67, 225, 168), rgb(33, 147, 147));
+}
+.titleTag .dtTag {
+   color: #fff;
+   font-weight: 900;
+   line-height: 16px;
+}
+.flightFare {
+   display: flex;
+   align-items: center;
+   justify-content: space-between;
+   margin-bottom: 20px !important;
+}
+.fareContainer {
+   display: flex;
+   align-items: center;
+   justify-content: space-between;
+   position: relative;
+   gap: 20px;
+}
+.fareContainer .blackText {
+   color: #000000;
+   font-weight: 900;
+   margin-bottom: 4px;
+}
+.customerOfferings {
+   display: flex;
+   align-items: center;
+   gap: 8px;
+}
+.customerOfferings .offeringItems {
+   position: relative;
+   padding: 8px 12px;
+   border-width: 1px;
+   border-style: solid;
+   gap: 10px;
+   display: flex;
+   border-radius: 6px;
+   padding-bottom: 12px;
+   cursor: pointer;
+}
+.customerOfferings .Regular {
+   background-color: rgb(234, 245, 255);
+   border-color: rgb(0, 140, 255);
+}
+.RadioBtn {
+   position: relative;
+   display: inline-block;
+}
+.RadioBtn input {
+   position: absolute;
+   z-index: 2;
+   width: 18px;
+   height: 18px;
+   opacity: 0;
+   cursor: pointer;
+}
+.RadioBtn .outer {
+   width: 18px;
+   height: 18px;
+   display: flex;
+   align-items: center;
+   justify-content: center;
+   border: 2px solid #9b9b9b;
+   border-radius: 50%;
+   background-color: #fff;
+   margin-top: 1px;
+   box-sizing: border-box;
+}
+.RadioBtn input[type="radio"]:checked+.outer {
+   border-color: #008cff;
+}
+.RadioBtn input[type="radio"]:checked+.outer .inner {
+   transform: scale(1);
+   opacity: 1;
+   background-color: #008cff;
+}
+.RadioBtn .inner {
+   transition: all 0.25s ease-in-out;
+   height: 12px;
+   width: 12px;
+   display: block;
+   margin: 1px;
+   border-radius: 50%;
+   box-sizing: border-box;
+}
+.customerOfferings .blue {
+   color: rgb(0, 140, 255);
+   margin-bottom: 3px;
+   line-height: 18px !important;
+   font-weight: 700;
+   font-size: 14px;
+}
+.customerOfferings .whiteSpace {
+   color: rgb(74, 74, 74);
+   margin-bottom: 3px;
+   font-weight: 700;
+   font-size: 14px;
+}
+.customerOfferings .activeGrey {
+   color: rgb(117, 117, 117);
+   font-size: 12px;
+   line-height: 12px;
+   font-weight: 400;
+}
+.flexSearch {
+   display: flex;
+   justify-content: center;
+}
+.flightWidgetSection .widgetSearchBtn {
+   width: 216px;
+   padding: 10px;
+   margin-bottom: -32px;
+   opacity: 1;
+}
+a.primaryBtn {
+   color: #fff;
+}
+.primaryBtn {
+   border-radius: 34px;
+   background: linear-gradient(93deg, #53b2fe, #065af3);
+   box-shadow: 0 1px 7px 0 rgba(0, 0, 0, 0.2);
+   display: inline-block;
+   flex-shrink: 0;
+   text-transform: uppercase;
+   cursor: pointer;
+   outline: 0;
+   border: 0;
+   text-align: center;
+   font-size: 24px;
+   font-weight: 700;
+   line-height: 24px;
+}
+.FromHeader {
+   display: flex;
+   align-items: center;
+   justify-content: center;
+   margin-bottom: 12px;
+}
+.makeFlex {
+   display: flex;
+   flex-direction: column;
+}
+.makeFlex .column {
+   flex-direction: column;
+}
+.Arrow {
+   border: solid #fff;
+   border-width: 0 2px 2px 0;
+   display: inline-block;
+   padding: 3px;
+   border-radius: 2px;
+   transform: rotate(45deg);
+   -webkit-transform: rotate(45deg);
+   animation: Ani 0.8s ease-in-out 6;
+}
+.Arrow:nth-child(2) {
+   animation-delay: 0.3s;
+}
+.FromHeader .exploreText {
+   font-size: 13px;
+   font-weight: 700;
+   color: #fff;
+   margin: 0 15px;
+   font-family: "Lato", sans-serif;
+   transform: translateY(3px);
+   animation: jumpUp 0.8s ease-in-out 6;
+}
+.Ticket_Details:hover {
+   background-color: rgb(234, 245, 255);
+}
+.hide {
+   display: none;
+}
