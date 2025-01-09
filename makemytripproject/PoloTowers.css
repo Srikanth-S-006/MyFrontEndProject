@@ -1,0 +1,33 @@
+body {
+    background-image: url("https://img.freepik.com/free-vector/realistic-bokeh-background_23-2148968647.jpg?t=st=1736149615~exp=1736153215~hmac=642694929925659656d3a436cbc1d8167d0a2f09729668f18812b6cb218c044e&w=740") 
+}
+p{
+    color: white;
+}
+img {
+    height: 500px;
+    width: 900px;
+    display: block;
+    justify-content: center;
+    align-items: center;
+    margin:0 auto;
+    padding: 100px;
+    
+}
+
+#btn {
+    background-color: #4CAF50; 
+    color: white;              
+    border: none;              
+    padding: 10px 20px;        
+    text-align: center;        
+    text-decoration: none;     
+    display: inline-block;     
+    font-size: 16px;           
+    cursor: pointer;          
+    border-radius: 5px; 
+     
+    margin-right: 50%;
+    margin-left: 50%; 
+    
+}
